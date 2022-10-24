@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CLETyRivera</string>
+    <string name="burj_khlaifa_content">\n\t\t\t\t\t\t\t\tDubai,United Arab Emirates\n\nBurj Khalifa, Khalifa also spelled Khalīfah, mixed-use skyscraper in Dubai, United Arab Emirates, that is the world’s tallest building, according to all three of the main criteria by which such buildings are judged. Burj Khalifa (“Khalifa Tower”), known during construction as Burj Dubai, was officially named to honour the leader of the neighbouring emirate of Abu Dhabi, Sheikh Khalifa ibn Zayed Al Nahyan.</string>
+    <string name="burj_khalifa">Burj Khalifa</string>
 </resources>

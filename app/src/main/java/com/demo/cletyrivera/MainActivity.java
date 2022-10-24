@@ -18,31 +18,18 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        MediaPlayer myMediaPlayer = MediaPlayer.create(this, R.raw.startupsound);
-        if (myMediaPlayer != null) {
-            myMediaPlayer.start();
-        } else {
-            myMediaPlayer.reset();
-            try {
-                myMediaPlayer.prepare();
-            } catch (IllegalStateException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-
-            myMediaPlayer.start();
-        }
-
+        MediaPlayer appIntro;
+        appIntro = MediaPlayer.create(MainActivity.this,R.raw.splash_sfx);
+        appIntro.start();
 
         new Handler().postDelayed(new Runnable() {
 
             @Override
             public void run() {
+                // This method will be executed once the timer is over
                 Intent i = new Intent(MainActivity.this, Home.class);
                 startActivity(i);
+                appIntro.stop();
                 finish();
             }
         }, 3000);

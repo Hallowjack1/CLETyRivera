@@ -11,7 +11,7 @@
         android:id="@+id/textView2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Burj Khalifa"
+        android:text="@string/burj_khalifa"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="48sp"
@@ -25,6 +25,7 @@
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
+        android:contentDescription="@string/burj_khalifa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -35,16 +36,16 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="Burj Khalifa, Khalifa also spelled Khalīfah, mixed-use skyscraper in Dubai, United Arab Emirates, that is the world’s tallest building, according to all three of the main criteria by which such buildings are judged. Burj Khalifa (“Khalifa Tower”), known during construction as Burj Dubai, was officially named to honour the leader of the neighbouring emirate of Abu Dhabi, Sheikh Khalifa ibn Zayed Al Nahyan."
-        android:textAlignment="center"
+        android:layout_width="360dp"
+        android:layout_height="335dp"
+        android:justificationMode="inter_word"
+        android:text="@string/burj_khlaifa_content"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.985" />
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
